@@ -1,0 +1,28 @@
+SCRAPER UNIVERSAL DE TOURS 3.0
+
+1. Copia estos archivos dentro de la carpeta scraper_v2 y reemplaza los existentes.
+2. Abre PowerShell dentro de scraper_v2.
+3. Activa el entorno virtual:
+   .\.venv\Scripts\Activate.ps1
+4. Instala las dependencias:
+   pip install -r requirements.txt
+5. Instala Chromium:
+   python -m playwright install chromium
+6. Verifica el código:
+   python -m py_compile main.py models.py matcher.py scraper.py
+7. Ejecuta las pruebas locales:
+   python validar_scraper.py
+   Debe mostrar: OK: todas las validaciones locales pasaron.
+8. Inicia el servicio:
+   python -m uvicorn main:app --reload --port 8001
+9. Abre:
+   http://localhost:8001/docs
+
+ENDPOINTS
+- POST /scraper/search: busca tours relacionados dentro del operador.
+- POST /scraper/extract: extrae una ficha publicada usando la URL exacta.
+
+La respuesta no incorpora precios. Conserva descripciones, ubicación,
+duración, imágenes, itinerario, incluye, no incluye, qué llevar, no llevar,
+recomendaciones, restricciones, información importante, cancelación,
+contacto y calendario cuando el operador los publica.

@@ -1,0 +1,25 @@
+﻿.env
+*.env
+
+frontend/node_modules/
+frontend/dist/
+
+scraper_v2/.venv/
+scraper_v2/__pycache__/
+*.pyc
+
+backend/target/
+
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store
+
+# Respaldos y cambios temporales
+cambio_hibrido/
+cambio_scraper_rapido/
+frontend/actualizacion_navegacion/
+frontend/cambio-diseno/
+frontend/respaldo_src_*/
+frontend/restauracion/
+*.bak
