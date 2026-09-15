@@ -1,25 +1,62 @@
-﻿.env
-*.env
+﻿# ==============================
+# Java / Maven
+# ==============================
+**/target/
 
-frontend/node_modules/
-frontend/dist/
+# ==============================
+# Node / React / Vite
+# ==============================
+**/node_modules/
+**/dist/
 
-scraper_v2/.venv/
-scraper_v2/__pycache__/
+# ==============================
+# Python
+# ==============================
+**/.venv/
+**/venv/
+**/__pycache__/
 *.pyc
+*.pyo
+*.pyd
 
-backend/target/
+# ==============================
+# Variables y secretos
+# ==============================
+.env
+.env.*
+!.env.example
 
+# ==============================
+# IDE
+# ==============================
 .vscode/
 .idea/
+*.code-workspace
+
+# ==============================
+# Sistema operativo
+# ==============================
 Thumbs.db
 .DS_Store
 
-# Respaldos y cambios temporales
-cambio_hibrido/
-cambio_scraper_rapido/
-frontend/actualizacion_navegacion/
-frontend/cambio-diseno/
-frontend/respaldo_src_*/
-frontend/restauracion/
+# ==============================
+# Temporales / logs
+# ==============================
 *.bak
+*.tmp
+*.log
+*~
+
+# ==============================
+# Archivos generados por extracción
+# ==============================
+errores_extraccion.txt
+
+# ==============================
+# Respaldos locales
+# ==============================
+scraper_v2/backups/
+*_backup*
+*_respaldo*
+# Datos generados por el extractor
+extractor_pdf_word/actividades.json

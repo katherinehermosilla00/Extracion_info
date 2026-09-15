@@ -1,3 +1,23 @@
+/* Navegación complementaria */
+
+.page-wrap {
+  overflow: hidden;
+}
+
+.page-tools {
+  display: flex;
+  align-items: center;
+}
+
+.page-wrap {
+  overflow: hidden;
+}
+
+.page-tools {
+  display: flex;
+  align-items: center;
+}
+
 .page-wrap {
   position: relative;
   isolation: isolate;
